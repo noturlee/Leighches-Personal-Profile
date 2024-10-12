@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this matches the corrected filename -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><img src="Images/WbLogo.png" alt="Logo" style="height: 120px;"></div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#initiatives">Initiatives</a></li>
+                    <li><a href="#honours-awards">Awards</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="intro-section">
+            <div class="intro-text">
+                <h1 class="comfortaa-text flip-animation">Hi, I'm <span>Leighché</span></h1>
+                <div class="social-buttons-container">
+                    <a href="https://github.com/noturlee" class="github-button" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/leighché" class="linkedin-button" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>            
+            <img src="Images/IMG_3773 2.png" alt="Lee" height="600px" width="auto">
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>A Coloured South African dedicated to becoming a top Business Intelligence (B.I.) Architect. With skills in coding and design, I bring creativity and technical expertise to my work. Currently, I am enhancing my skills in Data Analytics and Software Architecture and am interested in pursuing my honours to further my knowledge and impact in the tech industry.</p>
+
+            <p>I plan on studying till i get my PhD in Computer Science, but as of right now im pursuing a Postgraduate Diploma in Data Analytics. My love for programming, software development, and data science drives me, especially the thrill of creating tangible deliverables in the digital space. Additionally, I am passionate about traveling and aspire to work overseas, sharing my knowledge and learning from diverse perspectives globally. Unlike the conventional tech person, I love socializing, going out, and presenting my work. I enjoy telling people about what I do and why I do it, and I love showcasing the coolness of it. I do what I do because I love it.</p>
+            <div class="quote"><br>
+                |  "Success doesn't come to you, you go to it." - Marva Collins
+            </div>
+        </section>
+        
+     
+        <section id="certifications">
+            <br>
+            <h2 id="certification-heading">17+ Certifications</h2>
+            <p style="text-align: center;">Boasting Credentials from IBM, Google, HackerRank, LinkedIn</p>
+            <br>
+          
+            <!-- Image Carousel -->
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                  <img class="carousel" src="Certificates/agile.pdf" alt="Certification 1" loading="lazy">
+                  <img class="carousel" src="Certificates/ux-calarts.pdf" alt="Certification 2" loading="lazy">
+                  <img class="carousel" src="Certificates/BI.pdf" alt="Certification 3" loading="lazy">
+                  <img class="carousel" src="Certificates/Badge.png" alt="Certification 4" loading="lazy">
+                  <img class="carousel" src="Certificates/datanalytics.pdf" alt="Certification 5" loading="lazy">
+                  <img class="carousel" src="Certificates/excel.pdf" alt="Certification 6" loading="lazy">
+                  <img class="carousel" src="Certificates/ux-google.pdf" alt="Certification 7" loading="lazy">
+                  <img class="carousel" src="Certificates/softwareEng.pdf" alt="Certification 8" loading="lazy">
+                  <img class="carousel" src="Certificates/sqladvance.pdf" alt="Certification 9" loading="lazy">
+                  <img class="carousel" src="Certificates/csharp.pdf" alt="Certification 10" loading="lazy">
+                  <img class="carousel" src="Certificates/ibme.pdf" alt="Certification 11" loading="lazy">
+                  <img class="carousel" src="Certificates/java.pdf" alt="Certification 12" loading="lazy">
+                  <img class="carousel" src="Certificates/problem.pdf" alt="Certification 13" loading="lazy">
+                  <img class="carousel" src="Certificates/webdev.pdf" alt="Certification 15" loading="lazy">
+                  <img class="carousel" src="Certificates/GK.png" alt="Certification 16" loading="lazy">
+                  <img class="carousel" src="Certificates/sqlbasic.pdf" alt="Certification 17" loading="lazy">
+                  <img class="carousel" src="Certificates/Figma.png" alt="Certification 18" loading="lazy">
+                  <img class="carousel" src="Certificates/agile.pdf" alt="Certification 1 Duplicate" loading="lazy"> <!-- Duplicate for seamless loop -->
+                </div>
+              </div>
+              
+          
+            <script>
+              // JavaScript to handle the carousel
+              const carouselWrapper = document.querySelector('.carousel-wrapper');
+              const images = document.querySelectorAll('.carousel');
+              let currentImageIndex = 0;
+              let imageWidth = images[0].offsetWidth;
+          
+              function showCurrentImage() {
+                // Calculate new position
+                carouselWrapper.style.transition = 'transform 0.5s ease-in-out';
+                carouselWrapper.style.transform = `translateX(-${currentImageIndex * imageWidth}px)`;
+          
+                currentImageIndex++;
+          
+                // Loop back to the first image if it's the last one
+                if (currentImageIndex >= images.length) {
+                  setTimeout(() => {
+                    carouselWrapper.style.transition = 'none';
+                    carouselWrapper.style.transform = 'translateX(0)';
+                    currentImageIndex = 0;
+                  }, 200); // Match the transition duration
+                }
+              }
+          
+              // Start the carousel
+              setInterval(showCurrentImage, 2000);
+          
+              // Recalculate image width on window resize
+              window.addEventListener('resize', () => {
+                imageWidth = images[0].offsetWidth;
+              });
+            </script>
+
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <br>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Kotlin</li>
+                <li>Swift</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>C#</li>
+                <li>.NET Framework</li>
+                <li>React</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Firebase</li>
+                <li>NodeJs</li>
+                <li>Express</li>
+                <li>NodeJs</li>
+                <li>MongoDB</li>
+                <li>SQL</li>
+                <li>Vue.js</li>
+                <li>Cloud Computing</li>
+                <li>API</li>
+                <li>Dockerisation</li>
+                <li>Azure</li>
+                <li>AWS</li>
+                <li>Agile Methodologies</li>
+                <li>Data Cleaning</li>
+                <li>Data Mining</li>
+                <li>Data Wrangling</li>
+                <li>Data Visualisation</li>
+                <li>Machine Learning</li>
+                <li>Model Deployment</li>
+                <li>System Analysis & Design</li>
+                <li>Project Management</li>
+                <li>Communication</li>
+                <li>Leadership</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>BSc in Computer Science</h3>
+                <p><strong>IIE Varsity College (DBN)</strong></p>
+                <p>2021 - 2024</p>
+                <p>Graduated with an Aggregate of 97% (summa cum laude), top achiever in my class, my degree provided me with comprehensive knowledge in information technology, programming, mobile and web application development, Cloud development, advanced database design, and project management. I gained expertise in designing, coding, and troubleshooting software across various platforms, with a focus on developing solutions that are adaptable to any device or platform. The program also emphasized systemic thinking and equipped me with the ability to manage and implement full-scale software development projects.</p>
+            </div>
+            <div class="education-item">
+                <h3>Postgraduate Diploma in Data Analytics</h3>
+                <p><strong>IIE Varsity College (DBN)</strong></p>
+                <p>2025 - Present</p>
+                <p>This program equipped me with advanced knowledge in Big Data, Data Visualization, Artificial Intelligence (AI), Machine Learning (ML), and Statistics. It focuses on developing both the theoretical and practical skills needed to perform data analysis, enabling me to make informed business decisions. I also gained a strong foundation in statistical and mathematical analysis essential for interpreting and interrogating complex data. These skills have prepared me to pursue a Master's degree or advance my career as a Data Analyst.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <ul class="projects-list">
+                <li class="project-card project-card-1">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="Images/AgriEnergy.gif" alt="Project 1">
+                        </div>
+                        <div class="project-card-back">
+                            <p>MVC.NET Framework web app, Bridging agriculture and green energy. fostering renewable, energy solutions. Serving as a vital link between farmers and technology providers, driving innovation for an African future.</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="project-card project-card-2">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="Images/AutoGrow.gif" alt="Project 2">
+                        </div>
+                        <div class="project-card-back">
+                            <p>An IoT hydroponics system with an IOS (SWIFT), Android (Kotlin) and Web(C++, CSS and HTML) app. It connects to sensors to monitor & control the environment in a hydroponic system. Managed by an AI that promoting food security in SA</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="project-card project-card-3">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="Images/mm.gif" alt="Project 3">
+                        </div>
+                        <div class="project-card-back">
+                            <p>A productivity time app designed to help you take control of your schedule. It combines user-centric design with unique features to provide a seamless experience for managing time and boosting productivity. </p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="project-card project-card-4">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="Images/still.gif" alt="Project 4">
+                        </div>
+                        <div class="project-card-back">
+                            <p>A meditation and mindfulness Android app. offering a diverse range of AI guided meditations, soothing soundscapes, and mindfulness exercises tailored to suit both beginners and seasoned practitioners</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="project-card project-card-5">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="Images/inkohlakalo.gif" alt="Project 4">
+                        </div>
+                        <div class="project-card-back">
+                            <p>An e-service Municipality system. Utilising multiple Advance data strutures to create an application that provided numerious reporting, viewing events and many other services while being user-centric. </p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="project-card project-card-6">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="Images/thymebank.gif" alt="Project 4">
+                        </div>
+                        <div class="project-card-back">
+                            <p>A MERN stack application, It is an online banking platform using SWIFT payment methods, and enabling internation payments, there is a user side and an admin dashboard for this application, utilising various API's and cloud services</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="initiatives" class="container">
+            <h2>Initiatives</h2>
+            <ul class="initiatives-list">
+                <li><strong>SOIT Vice President</strong> - Varsity College</li>
+                <li><strong>Head of Robotics</strong> - Varsity College</li>
+                <li><strong>SATNAC Innovation Finalist</strong> - Telkom</li>
+            </ul>
+        </section>
+        
+        <hr class="solid">
+
+        <section id="honours-awards" class="container">
+            <h2>Honours and Awards</h2>
+            <div class="awards-list">
+                <div class="award-item">
+                    <h3>3x Aggregate Distinction Award</h3>
+                    <p class="issuer">Issued by Varsity College</p>
+                    <p class="date">Feb 2023</p>
+                </div>
+                <div class="award-item">
+                    <h3>Golden Key International Honours Award</h3>
+                    <p class="issuer">Issued by Golden Key International Honour Society</p>
+                    <p class="date">Apr 2024</p>
+                </div>
+                <div class="award-item">
+                    <h3>BET Software Dare to Dream Bursary</h3>
+                    <p class="issuer">Issued by BET Software</p>
+                    <p class="date">Mar 2023</p>
+                </div>
+                <div class="award-item">
+                    <h3>Postgraduate Academic Award</h3>
+                    <p class="issuer">Issued by Varsity College</p>
+                    <p class="date">Oct 2024</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="solid">
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div>
+                <p>
+                    I am always excited to connect with like-minded individuals and explore new opportunities. 
+                    Whether you have a project in mind, need advice, or just want to say hello, feel free to reach out!
+                </p>
+            </div>
+        
+            <div id="contact-content">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+        
+                <div class="contact-info">
+                    <p><strong>Email:</strong> leighcheleighche28@gmail.com</p>
+                    <p><strong>Phone:</strong> +27 71 715 8000</p>
+                    <p><strong>Location:</strong> Durban North, South Africa</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+    <div class="footer-content">
+        <p>
+            You can reach me at <a href="mailto:leighcheleighche28@gmail.com">leighcheleighche28@gmail.com</a> 
+            or follow me on 
+            <a href="https://www.linkedin.com/in/leighché" target="_blank">LinkedIn</a>.
+        </p>
+        <p>&copy; 2024 Leighché Jaikarran | All rights reserved.</p>
+    </div>
+</footer>
+        </section>
+
+        
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const certificationsList = document.getElementById('certifications-list');
+    
+            // Loop to add 17 certification items dynamically
+            for (let i = 1; i <= 17; i++) {
+                const li = document.createElement('li');
+                li.textContent = `Certification ${i}`;
+                certificationsList.appendChild(li);
+            }
+        });
+    
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const honoursSection = document.querySelector('#honours-awards');
+            const awardItems = document.querySelectorAll('.award-item');
+        
+            // Function to apply animations when section is in view
+            const observerOptions = {
+                root: null, // Use the viewport as the root
+                threshold: 0.2 // Trigger when 20% of the section is visible
+            };
+        
+            const sectionObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Add the fadeIn animation to the #honours-awards section
+                        honoursSection.style.animation = 'fadeIn 1.5s ease-in-out forwards';
+        
+                        // Animate each award item (fadeInUp) once the section is visible
+                        awardItems.forEach((item, index) => {
+                            item.style.animationDelay = `${index * 0.2}s`; // Stagger the animations
+                            item.style.opacity = '1'; // Ensure visibility after animation
+                        });
+        
+                        // Stop observing once the animation has triggered
+                        observer.disconnect();
+                    }
+                });
+            }, observerOptions);
+        
+            // Start observing the #honours-awards section
+            sectionObserver.observe(honoursSection);
+        });
+        
+    </script>
+    
+</body>
+</html>
