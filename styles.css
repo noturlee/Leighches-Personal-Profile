@@ -993,7 +993,7 @@ footer a:hover:after {
       padding: 65px 0px;
   }
   .intro-section img {
-      padding-top: 40px;
+      padding-top: 10px;
       max-width: 100%;
       animation: slideInRight 1s forwards; /* Animation for sliding in */
   }
