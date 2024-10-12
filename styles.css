@@ -990,10 +990,10 @@ footer a:hover:after {
    .intro-section {
       display: flex;
       align-items: center;
-      padding: 65px 0px;
+      padding: 40px 0px;
   }
   .intro-section img {
-      padding-top: 10px;
+      padding-top: 30px;
       max-width: 100%;
       animation: slideInRight 1s forwards; /* Animation for sliding in */
   }
