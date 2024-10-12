@@ -989,15 +989,16 @@ footer a:hover:after {
 
    .intro-section {
       display: flex;
-      align-items: center;
-      padding: 65px 0px;
+      align-items: flex-start; /* Change to flex-start to align items to the top */
+      padding: 10px 0px; /* Further reduced padding */
   }
+  
   .intro-section img {
-      padding-top: 40px;
+      padding-top: 0; /* Removed padding to move the image higher */
       max-width: 100%;
       animation: slideInRight 1s forwards; /* Animation for sliding in */
   }
-     
+  
   @keyframes slideInRight {
       from {
           transform: translateX(100%);
@@ -1008,19 +1009,96 @@ footer a:hover:after {
           opacity: 1;
       }
   }
-             
+  
   .intro-section .intro-text {
       flex: 1;
-      padding-right: -40px;
+      padding-right: 20px; /* Kept padding-right for layout */
+      margin-top: 60px; /* Increased negative margin to move text up more */
   }
+  
   .intro-section .intro-text h1 {
       font-size: 58px;
       color: #C8AA9E;
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
+      margin: 40; /* Remove default margin to move text up */
   }
+  
   .intro-section .intro-text h1 span {
       color: #5F673B;
-      
-  } 
+  }
+  
+  .social-buttons-container {
+      display: flex;
+      align-items: center;
+      margin-top: -20px; /* Increased negative margin to move buttons up more */
+  }
+  
+  .github-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 16px 28px;
+      font-size: 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-right: 20px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+  }
+  
+  .github-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #555;
+      transition: width 0.3s ease-in-out;
+      z-index: -1;
+  }
+  
+  .github-button:hover::before {
+      width: 100%;
+  }
+  
+  /* LinkedIn Button */
+  .linkedin-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #0077cc;
+      color: #fff;
+      padding: 16px 28px;
+      font-size: 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+  }
+  
+  .linkedin-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #005580;
+      transition: width 0.3s ease-in-out;
+      z-index: -1;
+  }
+  
+  .linkedin-button:hover::before {
+      width: 100%;
+  }
+  
+  .github-button i,
+  .linkedin-button i {
+      margin-right: 8px;
+  }
+  
 }
